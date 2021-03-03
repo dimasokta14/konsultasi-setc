@@ -7,6 +7,8 @@ import Header from "../components/Header";
 import routes from "./config";
 import GlobalStyles from "../globalStyles";
 
+import Redirect from '../pages/Home/redirect'
+
 const Router = () => {
   return (
     <Suspense fallback={null}>
@@ -23,6 +25,11 @@ const Router = () => {
             />
           );
         })}
+        <Route
+          path='/admin'
+          component={Redirect}
+          loc="https://konsultasi-setc.herokuapp.com/admin/auth/login"
+        />
       </Switch>
       <Footer />
     </Suspense>
