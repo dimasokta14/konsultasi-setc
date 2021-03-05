@@ -7,7 +7,7 @@ import Button from "../../../common/Button";
 
 import * as S from "./styles";
 
-const RightBlock = ({ title, content, button, icon, t, id }) => {
+const RightBlock = ({ title, content, button, icon, t, id, image }) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({
@@ -42,14 +42,28 @@ const RightBlock = ({ title, content, button, icon, t, id }) => {
           </Slide>
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
-          <Slide right>
-            <SvgIcon
-              src={icon}
-              className="about-block-image"
-              width="100%"
-              height="100%"
-            />
-          </Slide>
+          {
+            icon !== 'undefined' ? (
+              <Slide right>
+                <SvgIcon
+                  src={icon}
+                  className="about-block-image"
+                  width="100%"
+                  height="100%"
+                />
+              </Slide>
+            )
+            : (
+              <Slide right>
+                <img
+                  src={image}
+                  className="about-block-image"
+                  width="100%"
+                  height="100%"
+                />
+              </Slide>
+            )
+          }
         </Col>
       </Row>
     </S.RightBlockContainer>

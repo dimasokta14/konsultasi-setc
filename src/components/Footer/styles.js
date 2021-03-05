@@ -89,6 +89,23 @@ export const Large = styled(Link)`
   }
 `;
 
+export const LinkExt = styled.a`
+  font-size: 16px;
+  color: rgba(2, 7, 62, 0.8);
+  text-align: ${(props) => (props.left ? 'left' : '')};
+  padding: ${(props) => (props.left ? '0 10%' : '')};
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 0.625rem;
+
+  &:hover {
+    color: rgb(255, 130, 92);
+  }
+`
+
 export const Chat = styled.p`
   color: rgba(2, 7, 62, 0.8);
   max-width: 85px;

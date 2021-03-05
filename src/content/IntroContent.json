@@ -1,13 +1,29 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
-  "button": [
+  "content":  [
     {
-      "title": "Explore"
+      "title": "Saatnya UMKM Naik Kelas",
+      "text": "SETC mempunyai visi untuk mempersiapkan generasi UKM masa depan dalam menghadapi tantangan revolusi industri 4.0 and beyond – dengan menerapkan standar baru dalam proses penciptaan produk dan karya inovatif khas Indonesia yang menyejahterakan.",
+      "button": [
+        {
+          "title": "Mulai Sekarang"
+        },
+        {
+          "title": "Pelajari Lebih Lanjut",
+          "color": "#fff"
+        }
+      ],
+      "icon": "developer.svg"
     },
     {
-      "title": "Learn More",
-      "color": "#fff"
+      "title": "Kisah Karyani, “Go Internasional” Berbekal Produk Minuman Herbal",
+      "Text": "Karyani (52) mungkin tidak menyangka usaha kecil yang dimulainya dengan modal sebesar Rp 50.000 bisa membawa dampak besar pada hidupnya. Wanita asal Desa Kesiman, Pasuruan, Jawa Timur (Jatim) ini berhasil merambah pasar internasional berbekal produk minuman herbal instan produksinya. Sejak 2017, Karyani telah melakukan penjualan herbal instan tanpa gula ke Korea Selatan sebanyak 200-300 botol per bulan. Saat ini, jumlahnya naik menjadi 400 botol per bulan. Selain pasar internasional, produk milik Karyani juga sudah dipasarkan ke berbagai daerah di Indonesia, seperti Jakarta, Bali, Palembang, Yogyakarta, dan Samarinda. Padahal, dulu minuman herbal instan itu hanya dipasarkan di Pasuruan dan sekitarnya. Jeli melihat peluang Perjalanan bisnis Karyani dimulai sekitar tahun 2000. Dahulu, dia merupakan petani biasa yang tergabung dalam kelompok wanita tani Kesiman Jaya. Melihat hasil bumi, seperti temulawak, kunyit, dan jahe, yang tumbuh melimpah di daerahnya membuat dia tergerak untuk memanfaatkan. Apa yang dilakukan Karyani bukan tanpa alasan. Data Riset Tumbuhan dan Jamu pada 2012-2017 yang dilakukan Kementerian Kesehatan RI menyebutkan, dari 30.000 - 40.000 jenis tumbuhan di Indonesia, sebanyak 6.000 - 7.500 di antaranya merupakan tanaman obat. Namun, mengutip dari Kompas.com, Sabtu (06/05/2018), baru sekitar 200 spesies yang dimanfaatkan sebagai obat tradisional. Tak hanya sebagai obat, tanaman-tanaman herbal itu dapat bernilai ekonomi ketika diolah dengan tepat. Bahkan bisa menjadi bisnis yang menjanjikan. Menyadari hal itu, Karyani kemudian membulatkan tekad untuk mulai mengolah temulawak menjadi minuman herbal instan.",
+      "button": [
+        {
+          "title": "Selengkapnya"
+        }
+      ],
+      "image": "karyani.jpg",
+      "icon": "karyani.jpg"
     }
   ]
 }

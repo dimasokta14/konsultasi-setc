@@ -32,20 +32,20 @@ const Header = ({ t }) => {
     return (
       <Fragment>
         <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <S.Span>{t("About")}</S.Span>
+          <S.Span>{t("Konsultasi")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <S.Span>{t("Mission")}</S.Span>
-        </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <S.Span>{t("Product")}</S.Span>
-        </S.CustomNavLinkSmall>
+        {/* <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+          <S.Span>{t("")}</S.Span>
+        </S.CustomNavLinkSmall> */}
+        <S.LinkExt href='https://setc.id/umkm' target='_blank'>
+          <S.Span>{t("Produk UMKM")}</S.Span>
+        </S.LinkExt>
         <S.CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
         >
           <S.Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t("Kontak")}</Button>
           </S.Span>
         </S.CustomNavLinkSmall>
       </Fragment>
@@ -57,7 +57,11 @@ const Header = ({ t }) => {
       <S.Container>
         <Row type="flex" justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" />
+            <SvgIcon 
+              src="logo.svg"
+              width="101px"
+              height="64px" 
+            />
           </S.LogoContainer>
           <S.NotHidden>
             <MenuItem />

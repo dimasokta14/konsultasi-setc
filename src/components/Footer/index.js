@@ -35,24 +35,27 @@ const Footer = ({ t }) => {
           <Container>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
-                <S.Language>{t("Contact")}</S.Language>
-                <S.Large to="/">{t("Tell us everything")}</S.Large>
+                <S.Language>{t("Kontak")}</S.Language>
+                <S.Large to="/">{t("Ada yang bisa kami bantu?")}</S.Large>
                 <S.Para>
                   {t(
-                    `Do you have any question regarding the project? Feel free to reach out.`
+                    `Kami siap melayani. Kamu bisa kirim pertanyaan lewat email atau whatsapp kami.`
                   )}
                 </S.Para>
-                <a href="mailto:l.qqbadze@gmail.com">
-                  <S.Chat>{t(`Let's Chat`)}</S.Chat>
+                <a href="mailto:contact@setc.id">
+                  <S.Chat>{t(`Email`)}</S.Chat>
+                </a>
+                <a href="mailto:contact@setc.id">
+                  <S.Chat>{t(`Whatsapp`)}</S.Chat>
                 </a>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Policy")}</S.Title>
-                <S.Large to="/" left="true">
-                  {t("Application Security")}
-                </S.Large>
+                <S.Title>{t("Portal")}</S.Title>
+                <S.LinkExt href="https://setc.id/" target="_blank" left="true">
+                  {t("Website SETC")}
+                </S.LinkExt>
                 <S.Large left="true" to="/">
-                  {t("Software Principles")}
+                  {t("E-Map SETC")}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
@@ -61,43 +64,47 @@ const Footer = ({ t }) => {
                   {t("Support Center")}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Customer Support")}
+                  {t("Layanan UMKM")}
                 </S.Large>
               </Col>
             </Row>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
-                <S.Language>{t("ADDRESS")}</S.Language>
-                <S.Para>Rancho Santa Margarita</S.Para>
-                <S.Para>2131 Elk Street</S.Para>
-                <S.Para>California</S.Para>
+                <S.Language>{t("Alamat")}</S.Language>
+                <S.Para>Dusun Betiting,
+                        Desa Gunting,
+                        Kecamatan Sukorejo.
+                </S.Para>
+                <S.Para>Kabupaten Pasuruan</S.Para>
+                <S.Para>Jawa Timur</S.Para>
+                <S.Para>67161</S.Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Company")}</S.Title>
+                <S.Title>{t("Lainnya")}</S.Title>
+                <S.LinkExt left="true" href="https://setc.id/umkm" target='_blank'>
+                  {t("Produk UMKM")}
+                </S.LinkExt>
+                <S.LinkExt left="true" href="https://setc.id/cerita-setc" target='_blank'>
+                  {t("Cerita UMKM")}
+                </S.LinkExt>
+                <S.LinkExt left="true" href="https://setc.id/pelatihan/pendaftaran-peserta">
+                  {t("Pelatihan")}
+                </S.LinkExt>
                 <S.Large left="true" to="/">
-                  {t("About")}
-                </S.Large>
-                <S.Large left="true" to="/">
-                  {t("Blog")}
-                </S.Large>
-                <S.Large left="true" to="/">
-                  {t("Press")}
-                </S.Large>
-                <S.Large left="true" to="/">
-                  {t("Careers & Culture")}
+                  {t("Media Sosial")}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
                 <S.Select>
-                  <S.Label htmlFor="select-lang">{t("Language")}</S.Label>
+                  <S.Label htmlFor="select-lang">{t("Pilih Bahasa")}</S.Label>
                   <S.LangSelect
                     onChange={handleChange}
                     value={i18n.language}
                     id="select-lang"
                   >
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
+                    <option value="id">Indonesia</option>
+                    <optnion value="en">English</optnion>
                   </S.LangSelect>
                 </S.Select>
               </Col>
@@ -122,7 +129,7 @@ const Footer = ({ t }) => {
                   />
                 </S.LogoContainer>
               </S.NavLink>
-              <S.FooterContainer>
+              {/* <S.FooterContainer>
                 <SocialLink
                   href="https://github.com/Adrinlol/create-react-app-adrinlol"
                   src="github.svg"
@@ -143,7 +150,7 @@ const Footer = ({ t }) => {
                   href="https://medium.com/@lashakakabadze/"
                   src="medium.svg"
                 />
-              </S.FooterContainer>
+              </S.FooterContainer> */}
             </Row>
           </Container>
         </S.Extra>

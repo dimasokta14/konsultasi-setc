@@ -81,6 +81,17 @@ export const CustomNavLinkSmall = styled(NavLink)`
   }
 `;
 
+export const LinkExt = styled.a`
+  font-size: 1rem;
+  color: #000000;
+  transition: color 0.2s ease-in;
+  margin: 0.25rem 2rem;
+
+  @media only screen and (max-width: 768px) {
+    margin: 1.25rem 2rem;
+  }
+`
+
 export const Label = styled.span`
   font-size: 12px;
   font-weight: 500;

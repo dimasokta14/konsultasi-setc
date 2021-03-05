@@ -12,6 +12,7 @@ const Block = lazy(() => import("../Block"));
 const Input = lazy(() => import("../../common/Input"));
 const Button = lazy(() => import("../../common/Button"));
 const TextArea = lazy(() => import("../../common/TextArea"));
+const Select = lazy(() => import('../../common/Select'))
 
 const Contact = ({ title, content, id, t }) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
@@ -40,8 +41,8 @@ const Contact = ({ title, content, id, t }) => {
                 <Input
                   type="text"
                   name="name"
-                  id="Name"
-                  placeholder="Your Name"
+                  id="Nama Lengkap"
+                  placeholder="Nama Kamu"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -50,27 +51,46 @@ const Contact = ({ title, content, id, t }) => {
               <Col span={24}>
                 <Input
                   type="text"
+                  name="phone"
+                  id="Nomor HP"
+                  placeholder="Nomor HP Kamu"
+                  value={values.phone || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="phone" />
+              </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
                   name="email"
-                  id="Email"
-                  placeholder="Your Email"
+                  id="Email "
+                  placeholder="Email Kamu"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
                 <ValidationType type="email" />
               </Col>
               <Col span={24}>
+                <Select
+                  value={values.topik || ""}
+                  name="topik"
+                  id="Pilih Topik Pertanyaan"
+                  onChange={handleChange}
+                />
+              </Col>
+              <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
+                  placeholder="Masukan pertanyaan kamu"
                   value={values.message || ""}
                   name="message"
-                  id="Message"
+                  id="Pertanyaan"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
               </Col>
               <S.ButtonContainer>
                 <Button name="submit" type="submit">
-                  {t("Submit")}
+                  {t("Kirim")}
                 </Button>
               </S.ButtonContainer>
             </S.FormGroup>

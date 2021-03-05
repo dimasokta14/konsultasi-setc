@@ -1,15 +1,15 @@
 {
-  "title": "Light, Fast & Responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Layanan Konsultasi Kami",
+  "text": "Konsultasikan kebutuhan UMKM kamu bersama tim kami yang siap melayani pertanyaan kamu seputar konsultasi pengembangan UMKM.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Konsultasi Pendampingan Izin Usaha (NIB/IUMK)",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus augue velit, eu vehicula dolor auctor eu.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Desain Kemasan",
+      "content": "In hac habitasse platea dictumst. Maecenas rutrum rutrum ante. Vestibulum pulvinar diam elit.",
       "icon": "notes.svg"
     }
   ]
